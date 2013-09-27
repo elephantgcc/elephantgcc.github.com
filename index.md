@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 首页
-tagline: nlp ml mt algorithm
+tagline: natural language processing | machine translation | machine learning | algorithms | coding
 ---
 {% include JB/setup %}
 
