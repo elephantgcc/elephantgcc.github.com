@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "LeetCode: Jump Game 解题报告"
+title: "LeetCode解题报告: Jump Game"
 description: ""
 category: "LeetCode"
 tags: [greedy]
