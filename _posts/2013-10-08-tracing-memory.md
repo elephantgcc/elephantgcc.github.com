@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "TA叫什么来着？"
+title: "Ta叫什么来着？"
 tagline: "大脑如何读取记忆"
 description: ""
 category: "fun"
