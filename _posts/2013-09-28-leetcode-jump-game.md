@@ -52,25 +52,23 @@ index: 0  1  2  3  4  5  6  7
 {% highlight java %}
 public class Solution {
     public boolean canJump(int[] A) {
-        // Start typing your Java solution below
-        // DO NOT write main() function
-        if (A.length == 0 || A.length == 1) {
-            return true;
-        }
+        // IMPORTANT: Please reset any member data you declared, as
+        // the same Solution instance will be reused for each test case.
         int i = 0;
-        while (i + A[i] < A.length - 1) {
-            int pIndex = i;
-            for (int j = i + 1; j <= i + A[i]; ++j) {
-                if (j + A[j] > pIndex + A[pIndex]) {
-                    pIndex = j;
-                }
+        while (i < A.length) {
+            int promisingIndex = i;
+            for (int j = i; j <= i + A[i] && j < A.length; ++j) {
+                promisingIndex = Math.max(promisingIndex, j + A[j]);
             }
-            if (pIndex == i) {
+            if (promisingIndex >= A.length - 1) {
+                return true;
+            }
+            if (promisingIndex == i) {
                 return false;
             }
-            i = pIndex;
+            i = promisingIndex;
         }
-        return true;
+        return false;
     }
 }
 {% endhighlight %}
